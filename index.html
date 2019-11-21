@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.7.2/darkly/bulmaswatch.min.css">
+  <script src="script.js"></script>
+</head>
+<nav class="level">
+  <div class="level-item level-left">
+    <h1 class="title is-1">Events</h1>
+  </div>
+</nav>
+<p class="subtitle is-4"></p>
+<div class="container is-fluid">
+  <div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-primary">
+          <p class="title">What are they?</p>
+          <p class="subtitle">they... happen</p>
+          <div class="content">
+          <p>Events are an essential part of any web application's overall experience. Events, or triggers fire when certain milestones are met, or certain behaviors are detected.</p>
+            <p>some common events are `click`, `mouseover` or `document ready`. </p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">How do I use them?</p>
+          <p class="subtitle">With JAVASCRIPT!</p>
+          <div class="content">
+            <ul>
+              <li>Press the Shift key</li>
+              <li>Press the Control Key</li>
+            </ul>
+            <span onmouseover="hoverIncrease()" class="tag is-primary">hover</span><br />
+            <span onclick="clickIncrease()" class="tag is-secondary">click</span><br />
+            <input onchange="changeIncrease()" class="input" type="text" placeholder="Text input">
+            <br />
+          </div>
+        </article>
+      </div>
+    </div>
+    
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success">
+      <div class="content">
+        <p class="title">Try it out!</p>
+        <div class="content">
+<progress id="shift" class="progress is-primary" value="0" max="100">0%</progress>
+<progress id="control" class="progress is-link" value="0" max="100">0%</progress>
+<progress id="hover" class="progress is-info" value="0" max="100">0%</progress>
+<progress id="click" class="progress is-danger" value="0" max="100">0%</progress>
+<progress id="change" class="progress is-warning" value="0" max="100">0%</progress>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</div>
